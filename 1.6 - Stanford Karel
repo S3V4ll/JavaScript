@@ -1,0 +1,120 @@
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ 
+ https://stanford.edu/~cpiech/karel/ide.html
+ 
+ moving all through 5x5 stage
+ **/
+ 
+ 
+function main(){
+
+moveRow();
+left();
+right();
+left();
+right();
+
+
+}
+
+function moveRow(){
+move();   
+move();
+move();
+move();
+   }
+   
+   
+function right(){
+turnRight();
+move();
+turnRight();
+moveRow();
+}
+
+
+function left(){
+turnLeft();
+move();
+turnLeft();
+moveRow();}
+
+#################################
+Diagonal Move 
+
+
+function main(){
+
+diagonal();
+diagonal();
+diagonal();
+diagonal();
+putBeeper();
+
+}
+
+
+
+function diagonal(){
+   
+   turnLeft();
+   putBeeper();
+   move();
+   turnRight();
+   move();
+   
+   }
+
+
+#############################
+
+Alternating Put
+
+function main(){
+
+turnL();
+turnR();
+turnL();
+turnR();
+finalM();
+}
+
+function turnL(){
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   turnLeft();
+   move();
+   turnLeft();
+   }
+   
+   
+   function turnR(){
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   turnRight();
+   move();turnRight();
+   }
+   
+   function finalM(){
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   }
+   
+   ##############################
